@@ -1,10 +1,11 @@
 #!/bin/bash
-pathDatasetEuroc='/datasets/EuRoC' #Example, it is necesary to change it by the dataset path
+pathDatasetEuroc='/root/datasets/EuRoC/raw' #Example, it is necesary to change it by the dataset path
 
 #------------------------------------
 # Monocular Examples
 # echo "Launching MH01 with Monocular sensor"
-# ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/MH01 ./Monocular/EuRoC_TimeStamps/MH01.txt dataset-MH01_mono
+# echo "$pathDatasetEuro"/MH01
+./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/MH01 ./Monocular/EuRoC_TimeStamps/MH01.txt dataset-MH01_mono
 
 # echo "Launching MH02 with Monocular sensor"
 # ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/MH02 ./Monocular/EuRoC_TimeStamps/MH02.txt dataset-MH02_mono
@@ -18,8 +19,8 @@ pathDatasetEuroc='/datasets/EuRoC' #Example, it is necesary to change it by the 
 # echo "Launching MH05 with Monocular sensor"
 # ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/MH05 ./Monocular/EuRoC_TimeStamps/MH05.txt dataset-MH05_mono
 
-echo "Launching V101 with Monocular sensor"
-./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Monocular/EuRoC_TimeStamps/V101.txt dataset-V101_mono
+# echo "Launching V101 with Monocular sensor"
+# ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Monocular/EuRoC_TimeStamps/V101.txt dataset-V101_mono
 
 # echo "Launching V102 with Monocular sensor"
 # ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/V102 ./Monocular/EuRoC_TimeStamps/V102.txt dataset-V102_mono
@@ -49,7 +50,7 @@ echo "Launching V101 with Monocular sensor"
 #------------------------------------
 # Stereo Examples
 # echo "Launching MH01 with Stereo sensor"
-# ./Stereo/stereo_euroc ../Vocabulary/ORBvoc.txt ./Stereo/EuRoC.yaml "$pathDatasetEuroc"/MH01 ./Stereo/EuRoC_TimeStamps/MH01.txt dataset-MH01_stereo
+#  ./Stereo/stereo_euroc ../Vocabulary/ORBvoc.txt ./Stereo/EuRoC.yaml "$pathDatasetEuroc"/MH01 ./Stereo/EuRoC_TimeStamps/MH01.txt dataset-MH01_stereo
 
 # echo "Launching MH02 with Stereo sensor"
 # ./Stereo/stereo_euroc ../Vocabulary/ORBvoc.txt ./Stereo/EuRoC.yaml "$pathDatasetEuroc"/MH02 ./Stereo/EuRoC_TimeStamps/MH02.txt dataset-MH02_stereo
@@ -63,8 +64,8 @@ echo "Launching V101 with Monocular sensor"
 # echo "Launching MH05 with Stereo sensor"
 # ./Stereo/stereo_euroc ../Vocabulary/ORBvoc.txt ./Stereo/EuRoC.yaml "$pathDatasetEuroc"/MH05 ./Stereo/EuRoC_TimeStamps/MH05.txt dataset-MH05_stereo
 
-echo "Launching V101 with Stereo sensor"
-./Stereo/stereo_euroc ../Vocabulary/ORBvoc.txt ./Stereo/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Stereo/EuRoC_TimeStamps/V101.txt dataset-V101_stereo
+#echo "Launching V101 with Stereo sensor"
+# ./Stereo/stereo_euroc ../Vocabulary/ORBvoc.txt ./Stereo/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Stereo/EuRoC_TimeStamps/V101.txt dataset-V101_stereo
 
 # echo "Launching V102 with Stereo sensor"
 # ./Stereo/stereo_euroc ../Vocabulary/ORBvoc.txt ./Stereo/EuRoC.yaml "$pathDatasetEuroc"/V102 ./Stereo/EuRoC_TimeStamps/V102.txt dataset-V102_stereo
@@ -108,8 +109,8 @@ echo "Launching V101 with Stereo sensor"
 # echo "Launching MH05 with Monocular-Inertial sensor"
 # ./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/MH05 ./Monocular-Inertial/EuRoC_TimeStamps/MH05.txt dataset-MH05_monoi
 
-echo "Launching V101 with Monocular-Inertial sensor"
-./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Monocular-Inertial/EuRoC_TimeStamps/V101.txt dataset-V101_monoi
+# echo "Launching V101 with Monocular-Inertial sensor"
+# ./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Monocular-Inertial/EuRoC_TimeStamps/V101.txt dataset-V101_monoi
 
 # echo "Launching V102 with Monocular-Inertial sensor"
 # ./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V102 ./Monocular-Inertial/EuRoC_TimeStamps/V102.txt dataset-V102_monoi
@@ -130,8 +131,8 @@ echo "Launching V101 with Monocular-Inertial sensor"
 # echo "Launching Machine Hall with Monocular-Inertial sensor"
 # ./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/MH01 ./Monocular-Inertial/EuRoC_TimeStamps/MH01.txt "$pathDatasetEuroc"/MH02 ./Monocular-Inertial/EuRoC_TimeStamps/MH02.txt "$pathDatasetEuroc"/MH03 ./Monocular-Inertial/EuRoC_TimeStamps/MH03.txt "$pathDatasetEuroc"/MH04 ./Monocular-Inertial/EuRoC_TimeStamps/MH04.txt "$pathDatasetEuroc"/MH05 ./Monocular-Inertial/EuRoC_TimeStamps/MH05.txt dataset-MH01_to_MH05_monoi
 
-echo "Launching Vicon Room 1 with Monocular-Inertial sensor"
-./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Monocular-Inertial/EuRoC_TimeStamps/V101.txt "$pathDatasetEuroc"/V102 ./Monocular-Inertial/EuRoC_TimeStamps/V102.txt "$pathDatasetEuroc"/V103 ./Monocular-Inertial/EuRoC_TimeStamps/V103.txt dataset-V101_to_V103_monoi
+# echo "Launching Vicon Room 1 with Monocular-Inertial sensor"
+# ./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Monocular-Inertial/EuRoC_TimeStamps/V101.txt "$pathDatasetEuroc"/V102 ./Monocular-Inertial/EuRoC_TimeStamps/V102.txt "$pathDatasetEuroc"/V103 ./Monocular-Inertial/EuRoC_TimeStamps/V103.txt dataset-V101_to_V103_monoi
 
 # echo "Launching Vicon Room 2 with Monocular-Inertial sensor"
 # ./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V201 ./Monocular-Inertial/EuRoC_TimeStamps/V201.txt "$pathDatasetEuroc"/V202 ./Monocular-Inertial/EuRoC_TimeStamps/V202.txt "$pathDatasetEuroc"/V203 ./Monocular-Inertial/EuRoC_TimeStamps/V203.txt dataset-V201_to_V203_monoi
@@ -153,8 +154,8 @@ echo "Launching Vicon Room 1 with Monocular-Inertial sensor"
 # echo "Launching MH05 with Stereo-Inertial sensor"
 # ./Stereo-Inertial/stereo_inertial_euroc ../Vocabulary/ORBvoc.txt ./Stereo-Inertial/EuRoC.yaml "$pathDatasetEuroc"/MH05 ./Stereo-Inertial/EuRoC_TimeStamps/MH05.txt dataset-MH05_stereoi
 
-echo "Launching V101 with Stereo-Inertial sensor"
-./Stereo-Inertial/stereo_inertial_euroc ../Vocabulary/ORBvoc.txt ./Stereo-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Stereo-Inertial/EuRoC_TimeStamps/V101.txt dataset-V101_stereoi
+# echo "Launching V101 with Stereo-Inertial sensor"
+# ./Stereo-Inertial/stereo_inertial_euroc ../Vocabulary/ORBvoc.txt ./Stereo-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Stereo-Inertial/EuRoC_TimeStamps/V101.txt dataset-V101_stereoi
 
 # echo "Launching V102 with Stereo-Inertial sensor"
 # ./Stereo-Inertial/stereo_inertial_euroc ../Vocabulary/ORBvoc.txt ./Stereo-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V102 ./Stereo-Inertial/EuRoC_TimeStamps/V102.txt dataset-V102_stereoi
@@ -175,8 +176,8 @@ echo "Launching V101 with Stereo-Inertial sensor"
 # echo "Launching Machine Hall with Stereo-Inertial sensor"
 # ./Stereo-Inertial/stereo_inertial_euroc ../Vocabulary/ORBvoc.txt ./Stereo-Inertial/EuRoC.yaml "$pathDatasetEuroc"/MH01 ./Stereo-Inertial/EuRoC_TimeStamps/MH01.txt "$pathDatasetEuroc"/MH02 ./Stereo-Inertial/EuRoC_TimeStamps/MH02.txt "$pathDatasetEuroc"/MH03 ./Stereo-Inertial/EuRoC_TimeStamps/MH03.txt "$pathDatasetEuroc"/MH04 ./Stereo-Inertial/EuRoC_TimeStamps/MH04.txt "$pathDatasetEuroc"/MH05 ./Stereo-Inertial/EuRoC_TimeStamps/MH05.txt dataset-MH01_to_MH05_stereoi
 
-echo "Launching Vicon Room 1 with Stereo-Inertial sensor"
-./Stereo-Inertial/stereo_inertial_euroc ../Vocabulary/ORBvoc.txt ./Stereo-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Stereo-Inertial/EuRoC_TimeStamps/V101.txt "$pathDatasetEuroc"/V102 ./Stereo-Inertial/EuRoC_TimeStamps/V102.txt "$pathDatasetEuroc"/V103 ./Stereo-Inertial/EuRoC_TimeStamps/V103.txt dataset-V101_to_V103_stereoi
+# echo "Launching Vicon Room 1 with Stereo-Inertial sensor"
+# ./Stereo-Inertial/stereo_inertial_euroc ../Vocabulary/ORBvoc.txt ./Stereo-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V101 ./Stereo-Inertial/EuRoC_TimeStamps/V101.txt "$pathDatasetEuroc"/V102 ./Stereo-Inertial/EuRoC_TimeStamps/V102.txt "$pathDatasetEuroc"/V103 ./Stereo-Inertial/EuRoC_TimeStamps/V103.txt dataset-V101_to_V103_stereoi
 
 # echo "Launching Vicon Room 2 with Stereo-Inertial sensor"
 # ./Stereo-Inertial/stereo_inertial_euroc ../Vocabulary/ORBvoc.txt ./Stereo-Inertial/EuRoC.yaml "$pathDatasetEuroc"/V201 ./Stereo-Inertial/EuRoC_TimeStamps/V201.txt "$pathDatasetEuroc"/V202 ./Stereo-Inertial/EuRoC_TimeStamps/V202.txt "$pathDatasetEuroc"/V203 ./Stereo-Inertial/EuRoC_TimeStamps/V203.txt dataset-V201_to_V203_stereoi
